@@ -6,34 +6,43 @@
             * {
                 box-sizing: border-box;
             }
-            html {
+            /* html {
                 background: url('images/romana-en-tacos.jpg') no-repeat center center fixed;
                 -webkit-background-size: cover;
                 -moz-background-size:cover;
                 -o-bacground-size:cover;
                 background-size:cover;
-            } */
+                
+            }*/
             body {
-                font-family: Arial;
+                font-family: Arial, monospace;
                 padding: 25px;
                 background: #f1f1f1;
+                background: url('images/romana-en-tacos.jpg') no-repeat center center fixed;
+                -webkit-background-size: cover;
+                -moz-background-size:cover;
+                -o-bacground-size:cover;
+                background-size:cover;
             }
+            
             /* size the header*/
             .header {
-                padding: 109px;
-                text-align: right;
+                padding: 200px;
+                text-align: center;
                 background: white;
                 background: url('images/Romana-en-taco.jpg')  no-repeat top center fixed;
-                -webkit-background-size: 80%;
-                -moz-background-size:80%;
-                -o-bacground-size:80%;
-                background-size:80%;
+                -webkit-background-size: 90%;
+                -moz-background-size:90%;
+                -o-bacground-size:90%;
+                background-size:90%;
                 background: width 75;
+                text-transform: capitalize;
             }
             .header h1 {
                 font-size: 50px;
                 font-family: sans-serif;
             }
+            
             /* Style the top navigation bar */
             .topnav {
                 overflow: hidden;
@@ -52,12 +61,14 @@
             .topnav a:hover {
                 background-color: #ddd;
                 color: black;
+                
             }
             /* Create two unequal columns that floats next to each other */
             /* Left column */
             .leftcolumn {
                 float: left;
                 width: 25%;
+                background: url('images/romana-en-tacos.jpg')  no-repeat top center fixed;
             }
             /* Right column */
             .rightcolumn {
@@ -66,21 +77,81 @@
                 background-color: #f1f1f1;
                 padding-left: 20px;
                 background: url('images/romana-en-tacos.jpg')  no-repeat top center fixed;
-            }
-            /* Fake image */
-            .fakeimg1  {
-                background-color: #aaa;
-                width: 100%;
-                padding: 20px;
-                background: url('images/Tacos.jpg')  no-repeat top center fixed;
-                object-fit: cover;
-            }
-            /* Add a card effect for articles */
-            .card {
+            }/* Add a card effect for articles */
+            .card1 {
                 background-color: white;
                 padding: 20px;
                 margin-top: 20px;
+                background: url('images/Tacos.jpg')  no-repeat center center fixed;
+                object-fit: cover;
+                
+                
             }
+            .card2 {
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+                background: url('images/Burritos.jpg')  no-repeat center center fixed;
+                object-fit: cover;
+                
+            }
+            .card3 {
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+                background: url('images/Cielito-lindo.jpg')  no-repeat center center fixed;
+                object-fit: cover;
+                
+            }
+            .card4 {
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+                background: url('images/Chimichanga.jpg')  no-repeat center center fixed;
+                object-fit: cover;
+                
+            }
+            .card5 {
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+                background: url('images/Tacos-al-pastor.jpg')  no-repeat center center fixed;
+                object-fit: cover;
+                
+            }
+            .card6 {
+                background-color: white;
+                padding: 20px;
+                margin-top: 20px;
+                text-align: left;
+                
+                
+            }
+            .card7 {
+                /*background-color: rgb(10, 1, 1);*/
+                padding: 10px;
+                margin-top: 10px;
+                color:rgb(255, 255, 255);
+                font-size: 16px;
+                font-family: Arial;
+                font-weight: 100;
+                font-style: oblique;
+                text-align: left;
+                
+            }
+            .main-section{
+                color:rgb(255, 255, 255);
+                padding: 2px;
+                margin-top: 2px;
+                font-size: 22px;
+                font-family:Arial, sans-serif;
+                font-weight: 100;
+                font-style: oblique;
+            }
+            .nav-link{
+                font-family: Arial;
+            }
+            
             /* Clear floats after the columns */
             .row:after {
                 content: "";
@@ -89,17 +160,17 @@
             }
             /* Footer */
             .footer {
-                padding: 20px;
+                padding: 10px;
                 text-align: center;
                 background: #ddd;
-                margin-top: 20px;
+                margin-top: 10px;
                 
                 
             }
             /* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
             @media screen and (max-width: 800px) {
                 .leftcolumn,
-                .rightcolumn {
+                .rightcolumn{
                     width: 100%;
                     padding: 0;
                 }
@@ -111,15 +182,14 @@
                     width: 100%;
                 }
             }
-        </style>
-
+    </style>
     </head>
 
     <body>
         <div class="row">
-            <main id="main-doc">   
+            <main id="main-doc"> 
                 <div class="leftcolumn"> 
-                    <div class="card">
+                    <div class="card6">
                         <nav class="topnav" id="navbar">
                             <header></header>
                             <a href="#Tacos" class="nav-link" id="nav-link">
@@ -131,6 +201,7 @@
                             <a href="#Cielito_Lindo" class="nav-link" id="nav-link">
                                 Cielito Lindo
                             </a>
+                            
                             <a href="#Chimichanga" class="nav-link" id="nav-link">
                                 Chimichanga
                             </a>
@@ -142,76 +213,72 @@
                 </div>        
                 <div class="rightcolumn">
                     <div class="header" >
-                        <h1>bby</h1>
-                        <p>bbbbb</p>
+                        <h1></h1>
+                        <p></p>
                     </div>
-                    <div class="card">
+                    <div class="card1">
                         <section class="main-section"  id="Tacos">
                             <header>Tacos</header>
                             <code>3 Unidades</code>
+                            <p>$285</p>
                             <ol>
-                                <li>Chiken Tacos</li>
-                                <li>pork Tacos</li>
-                                <li>beef Tacos</li>
-                                <li>Fish Tacos</li>
-                                <li>sea food Tacos</li>
+                                <li>De Cerdo</li>
+                                <li>De Pollo</li>
+                                <li>De Res</li>                                
+                                <li>Mixtos</li>
                             </ol>
-                            <!--Añadir imagenes de la comidanter fixed;-->
-                            <h5>con paas fritas y un reforesco incluidos</h5>
-                            <div class="fakeimg1" style="height:200px;"></div>
-                            <p>Some text.. </p>
-                            <p>dddd</p>
+                            <p>$290</p>
                         </section>
                     </div>
-                    <div class="card">
+                    <div class="card2">
                         <section class="main-section" id="Burritos">
                             <header>Burritos</header>
-                            <code>really good</code>
-                            <div class="fakeimg" style="height:200px;">Image</div>
+                            <code>Con porcion de arroz</code>
                             <p>$285</p>
-                            <p>ddxx</p>
+                            <ol>
+                                <li>De Cerdo</li>
+                                <li>De Pollo</li>
+                                <li>De Res</li>
+                                <li>Mixtos</li>
+                            </ol>
+                            <p>$290</p>
                         </section>
                     </div>
-                    <div class="card">
+                    <div class="card3">
                         <section class="main-section" id="Cielito_Lindo">
                             <header>Cielito Lindo</header>
-                            <code>really good</code>
-                            <h5>Title description, Dec 7, 2017</h5>
-                            <div class="fakeimg" style="height:200px;">Image</div>
-                            <p>Some text..</p>
-                            <p>dd</p>
+                            <code>Papas fritas rebosadas con quedo,<br>guacamole,carne y creama agria</code>
+                            <p>$285</p>
+                            <p></p>                            
                         </section>
                     </div>
-                    <div class="card">
+                    <div class="card4">
                         <section class="main-section" id="Chimichanga">
                             <header>Chimichanga</header>
-                            <code>really good</code>
-                            <h5>Title desciption, Dec 7, 2017</h5>
-                            <div class="fakeimg" style="height:200px;">Image</div>
-                            <p>Some text..</p>
-                            <p>drfre</p>
+                            <code></code>
+                            <p>$285</p>
+                            <ol>
+                                <li>De Cerdo</li>
+                                <li>De Pollo</li>
+                                <li>De Res</li>                                
+                                <li>Tacos Mixtos</li>
+                            </ol>
+                            <p>$290</p>   
                         </section>
                     </div>
-                    <div class="card">
+                    <div class="card5">
                         <section class="main-section" id="Tacos_Al_Pastor">
                             <header>Tacos Al Pastor</header>
-                            <code>really good</code>
-                            <h5>Title description, Sep 2, 2017</h5>
-                            <div class="fakeimg" style="height:200px;">Image</div>
-                            <p>Some text..</p>
-                            <p>erfer</p>
+                            <code>Carne de pollo mechada con queso,<br>vegetales y peperoni</code>
+                            <h5>$395</h5>
+                            <p>Tra tres tortillas</p>
+                            <p>Guacamole</p>
+                            <p></p>
                         </section>
                     </div>            
                 </div>
-                        
-                    </div>
-                    <div class="card"></div>
-                        
-                    </div>
-                </div> 
             </main>                 
-        </div>                   
+        </div>                 
         <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     </body>
-
 </html>
